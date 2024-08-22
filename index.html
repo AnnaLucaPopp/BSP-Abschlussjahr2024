@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen zu meinem Event</h1>
+        <p>Trage dich in die Gästeliste ein, um dabei zu sein.</p>
+        <form action="https://formspree.io/f/https://formspree.io/f/xvgpwdva" method="POST">
+            <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+            <input type="submit" value="Eintragen">
+        </form>
+    </div>
+</body>
+</html>
